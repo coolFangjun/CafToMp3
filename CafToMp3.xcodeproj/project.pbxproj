@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		89BC758A1B2DAB5300B9969A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BC75891B2DAB5300B9969A /* main.m */; };
+		89BC759A1B2DAC3300B9969A /* CafToMp3.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BC75971B2DAC3300B9969A /* CafToMp3.m */; };
+		89BC759B1B2DAC3300B9969A /* libmp3lame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 89BC75991B2DAC3300B9969A /* libmp3lame.a */; };
+		89BC759E1B2DAE9B00B9969A /* CafToMp3_.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BC759D1B2DAE9B00B9969A /* CafToMp3_.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,12 @@
 /* Begin PBXFileReference section */
 		89BC75861B2DAB5300B9969A /* CafToMp3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CafToMp3; sourceTree = BUILT_PRODUCTS_DIR; };
 		89BC75891B2DAB5300B9969A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		89BC75961B2DAC3300B9969A /* CafToMp3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CafToMp3.h; sourceTree = "<group>"; };
+		89BC75971B2DAC3300B9969A /* CafToMp3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CafToMp3.m; sourceTree = "<group>"; };
+		89BC75981B2DAC3300B9969A /* lame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lame.h; sourceTree = "<group>"; };
+		89BC75991B2DAC3300B9969A /* libmp3lame.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmp3lame.a; sourceTree = "<group>"; };
+		89BC759C1B2DAE9B00B9969A /* CafToMp3_.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CafToMp3_.h; sourceTree = "<group>"; };
+		89BC759D1B2DAE9B00B9969A /* CafToMp3_.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CafToMp3_.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89BC759B1B2DAC3300B9969A /* libmp3lame.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +68,12 @@
 			isa = PBXGroup;
 			children = (
 				89BC75891B2DAB5300B9969A /* main.m */,
+				89BC75961B2DAC3300B9969A /* CafToMp3.h */,
+				89BC75971B2DAC3300B9969A /* CafToMp3.m */,
+				89BC759C1B2DAE9B00B9969A /* CafToMp3_.h */,
+				89BC759D1B2DAE9B00B9969A /* CafToMp3_.m */,
+				89BC75981B2DAC3300B9969A /* lame.h */,
+				89BC75991B2DAC3300B9969A /* libmp3lame.a */,
 			);
 			path = CafToMp3;
 			sourceTree = "<group>";
@@ -118,6 +134,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89BC759A1B2DAC3300B9969A /* CafToMp3.m in Sources */,
+				89BC759E1B2DAE9B00B9969A /* CafToMp3_.m in Sources */,
 				89BC758A1B2DAB5300B9969A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -205,6 +223,10 @@
 		89BC758E1B2DAB5300B9969A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CafToMp3",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -212,6 +234,10 @@
 		89BC758F1B2DAB5300B9969A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CafToMp3",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -235,6 +261,7 @@
 				89BC758F1B2DAB5300B9969A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
